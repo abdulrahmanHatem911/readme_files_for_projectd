@@ -191,15 +191,491 @@ flutter run -d chrome         # تشغيل Web
 - قابلية التوسع: أي Feature جديد يتبع نفس النمط (models / controller / view/... ).
 
 ## 16) خارطة الطريق (Roadmap)
-| المرحلة | الوصف | الحالة |
-|---------|-------|--------|
-| إضافة إدارة السنوات الأكاديمية بشكل كامل | واجهات + Cubit + Firestore Collection | قادم |
-| إدارة الفصول (Terms) مع الزمن والتواريخ | CRUD + ربط بالعام الدراسي | قادم |
-| نظام صلاحيات Roles متعدد (SuperAdmin / Editor / Viewer) | إستراتيجية Authorization | قادم |
-| Analytics Dashboard فعلي | إحصائيات Firestore + Charts | قادم |
-| رفع صور (Storage) | دمج Firebase Storage | قادم |
-| دعم الوضع الداكن تفاعلي | تبديل ديناميكي ThemeMode | قادم |
-| تحسين الاختبارات | Unit + Widget + Integration | قادم |
+# File Tree: dreame_admin
+
+Generated on: 8/16/2025, 4:19:27 PM
+Root path: `d:\projects\Flutter\dreame_admin`
+
+```
+├── 📁 .dart_tool/ 🚫 (auto-hidden)
+├── 📁 .git/ 🚫 (auto-hidden)
+├── 📁 .idea/ 🚫 (auto-hidden)
+├── 📁 .vscode/ 🚫 (auto-hidden)
+├── 📁 android/
+│   ├── 📁 .gradle/
+│   │   ├── 📁 8.12/
+│   │   │   ├── 📁 checksums/
+│   │   │   │   ├── 🔒 checksums.lock
+│   │   │   │   ├── 📄 md5-checksums.bin
+│   │   │   │   └── 📄 sha1-checksums.bin
+│   │   │   ├── 📁 executionHistory/
+│   │   │   │   ├── 📄 executionHistory.bin
+│   │   │   │   └── 🔒 executionHistory.lock
+│   │   │   ├── 📁 expanded/
+│   │   │   ├── 📁 fileChanges/
+│   │   │   │   └── 📄 last-build.bin
+│   │   │   ├── 📁 fileHashes/
+│   │   │   │   ├── 📄 fileHashes.bin
+│   │   │   │   ├── 🔒 fileHashes.lock
+│   │   │   │   └── 📄 resourceHashesCache.bin
+│   │   │   ├── 📁 vcsMetadata/
+│   │   │   └── 📄 gc.properties
+│   │   ├── 📁 buildOutputCleanup/
+│   │   │   ├── 🔒 buildOutputCleanup.lock
+│   │   │   ├── 📄 cache.properties
+│   │   │   └── 📄 outputFiles.bin
+│   │   ├── 📁 kotlin/
+│   │   │   └── 📁 errors/
+│   │   │       ├── 📋 errors-1754247849773.log 🚫 (auto-hidden)
+│   │   │       ├── 📋 errors-1754247849781.log 🚫 (auto-hidden)
+│   │   │       ├── 📋 errors-1754760036835.log 🚫 (auto-hidden)
+│   │   │       ├── 📋 errors-1754760036847.log 🚫 (auto-hidden)
+│   │   │       ├── 📋 errors-1755337924057.log 🚫 (auto-hidden)
+│   │   │       ├── 📋 errors-1755337924069.log 🚫 (auto-hidden)
+│   │   │       ├── 📋 errors-1755341672903.log 🚫 (auto-hidden)
+│   │   │       └── 📋 errors-1755341672917.log 🚫 (auto-hidden)
+│   │   ├── 📁 noVersion/
+│   │   │   └── 🔒 buildLogic.lock
+│   │   ├── 📁 vcs-1/
+│   │   │   └── 📄 gc.properties
+│   │   └── 📄 file-system.probe
+│   ├── 📁 .kotlin/
+│   │   ├── 📁 errors/
+│   │   │   ├── 📋 errors-1754247849773.log 🚫 (auto-hidden)
+│   │   │   ├── 📋 errors-1754247849781.log 🚫 (auto-hidden)
+│   │   │   ├── 📋 errors-1754760036835.log 🚫 (auto-hidden)
+│   │   │   ├── 📋 errors-1754760036847.log 🚫 (auto-hidden)
+│   │   │   ├── 📋 errors-1755337924056.log 🚫 (auto-hidden)
+│   │   │   ├── 📋 errors-1755337924069.log 🚫 (auto-hidden)
+│   │   │   ├── 📋 errors-1755341672903.log 🚫 (auto-hidden)
+│   │   │   └── 📋 errors-1755341672917.log 🚫 (auto-hidden)
+│   │   └── 📁 sessions/
+│   ├── 📁 app/
+│   │   ├── 📁 src/
+│   │   │   ├── 📁 debug/
+│   │   │   │   └── 📄 AndroidManifest.xml
+│   │   │   ├── 📁 main/
+│   │   │   │   ├── 📁 java/
+│   │   │   │   │   └── 📁 io/
+│   │   │   │   │       └── 📁 flutter/
+│   │   │   │   │           └── 📁 plugins/
+│   │   │   │   │               └── ☕ GeneratedPluginRegistrant.java
+│   │   │   │   ├── 📁 kotlin/
+│   │   │   │   │   └── 📁 com/
+│   │   │   │   │       └── 📁 example/
+│   │   │   │   │           └── 📁 dreame_admin/
+│   │   │   │   │               └── 🟦 MainActivity.kt
+│   │   │   │   ├── 📁 res/
+│   │   │   │   │   ├── 📁 drawable/
+│   │   │   │   │   │   └── 📄 launch_background.xml
+│   │   │   │   │   ├── 📁 drawable-v21/
+│   │   │   │   │   │   └── 📄 launch_background.xml
+│   │   │   │   │   ├── 📁 mipmap-hdpi/
+│   │   │   │   │   │   ├── 🖼️ ic_launcher.png
+│   │   │   │   │   │   ├── 🖼️ ic_launcher_foreground.png
+│   │   │   │   │   │   └── 🖼️ ic_launcher_round.png
+│   │   │   │   │   ├── 📁 mipmap-mdpi/
+│   │   │   │   │   │   ├── 🖼️ ic_launcher.png
+│   │   │   │   │   │   ├── 🖼️ ic_launcher_foreground.png
+│   │   │   │   │   │   └── 🖼️ ic_launcher_round.png
+│   │   │   │   │   ├── 📁 mipmap-xhdpi/
+│   │   │   │   │   │   ├── 🖼️ ic_launcher.png
+│   │   │   │   │   │   ├── 🖼️ ic_launcher_foreground.png
+│   │   │   │   │   │   └── 🖼️ ic_launcher_round.png
+│   │   │   │   │   ├── 📁 mipmap-xxhdpi/
+│   │   │   │   │   │   ├── 🖼️ ic_launcher.png
+│   │   │   │   │   │   ├── 🖼️ ic_launcher_foreground.png
+│   │   │   │   │   │   └── 🖼️ ic_launcher_round.png
+│   │   │   │   │   ├── 📁 mipmap-xxxhdpi/
+│   │   │   │   │   │   ├── 🖼️ ic_launcher.png
+│   │   │   │   │   │   ├── 🖼️ ic_launcher_foreground.png
+│   │   │   │   │   │   └── 🖼️ ic_launcher_round.png
+│   │   │   │   │   ├── 📁 values/
+│   │   │   │   │   │   └── 📄 styles.xml
+│   │   │   │   │   └── 📁 values-night/
+│   │   │   │   │       └── 📄 styles.xml
+│   │   │   │   └── 📄 AndroidManifest.xml
+│   │   │   └── 📁 profile/
+│   │   │       └── 📄 AndroidManifest.xml
+│   │   ├── 🟦 build.gradle.kts
+│   │   └── 📄 google-services.json
+│   ├── 📁 gradle/
+│   │   └── 📁 wrapper/
+│   │       ├── ☕ gradle-wrapper.jar
+│   │       └── 📄 gradle-wrapper.properties
+│   ├── 🚫 .gitignore
+│   ├── 🟦 build.gradle.kts
+│   ├── 📄 dreame_admin_android.iml 🚫 (auto-hidden)
+│   ├── 📄 gradle.properties
+│   ├── 📄 gradlew
+│   ├── 🐚 gradlew.bat
+│   ├── 📄 key.properties
+│   ├── 📄 local.properties
+│   └── 🟦 settings.gradle.kts
+├── 📁 assets/
+│   ├── 📁 fonts/
+│   │   ├── 📄 Cairo-Bold.ttf
+│   │   ├── 📄 Cairo-Medium.ttf
+│   │   ├── 📄 Cairo-Regular.ttf
+│   │   ├── 📄 Cairo-SemiBold.ttf
+│   │   ├── 📄 Poppins-Bold.ttf
+│   │   ├── 📄 Poppins-Medium.ttf
+│   │   ├── 📄 Poppins-MediumItalic.ttf
+│   │   ├── 📄 Poppins-Regular.ttf
+│   │   ├── 📄 Poppins-SemiBold.ttf
+│   │   ├── 📄 Poppins-SemiBoldItalic.ttf
+│   │   ├── 📄 Poppins-Thin.ttf
+│   │   └── 📄 icons.ttf
+│   ├── 📁 icons/
+│   │   ├── 🖼️ check_circul.png
+│   │   └── 🖼️ faild_icon.png
+│   └── 📁 images/
+│       └── 🖼️ image_pattern.jpg
+├── 📁 build/ 🚫 (auto-hidden)
+├── 📁 ios/
+│   ├── 📁 Flutter/
+│   │   ├── 📁 ephemeral/
+│   │   │   ├── 🐍 flutter_lldb_helper.py
+│   │   │   └── 📄 flutter_lldbinit
+│   │   ├── 📄 AppFrameworkInfo.plist
+│   │   ├── 📄 Debug.xcconfig
+│   │   ├── 📄 Generated.xcconfig
+│   │   ├── 📄 Release.xcconfig
+│   │   └── 🐚 flutter_export_environment.sh
+│   ├── 📁 Runner/
+│   │   ├── 📁 Assets.xcassets/
+│   │   │   ├── 📁 AppIcon.appiconset/
+│   │   │   │   ├── 📄 Contents.json
+│   │   │   │   ├── 🖼️ Icon-App-1024x1024@1x.png
+│   │   │   │   ├── 🖼️ Icon-App-20x20@1x.png
+│   │   │   │   ├── 🖼️ Icon-App-20x20@2x.png
+│   │   │   │   ├── 🖼️ Icon-App-20x20@3x.png
+│   │   │   │   ├── 🖼️ Icon-App-29x29@1x.png
+│   │   │   │   ├── 🖼️ Icon-App-29x29@2x.png
+│   │   │   │   ├── 🖼️ Icon-App-29x29@3x.png
+│   │   │   │   ├── 🖼️ Icon-App-40x40@1x.png
+│   │   │   │   ├── 🖼️ Icon-App-40x40@2x.png
+│   │   │   │   ├── 🖼️ Icon-App-40x40@3x.png
+│   │   │   │   ├── 🖼️ Icon-App-60x60@2x.png
+│   │   │   │   ├── 🖼️ Icon-App-60x60@3x.png
+│   │   │   │   ├── 🖼️ Icon-App-76x76@1x.png
+│   │   │   │   ├── 🖼️ Icon-App-76x76@2x.png
+│   │   │   │   └── 🖼️ Icon-App-83.5x83.5@2x.png
+│   │   │   └── 📁 LaunchImage.imageset/
+│   │   │       ├── 📄 Contents.json
+│   │   │       ├── 🖼️ LaunchImage.png
+│   │   │       ├── 🖼️ LaunchImage@2x.png
+│   │   │       ├── 🖼️ LaunchImage@3x.png
+│   │   │       └── 📖 README.md
+│   │   ├── 📁 Base.lproj/
+│   │   │   ├── 📄 LaunchScreen.storyboard
+│   │   │   └── 📄 Main.storyboard
+│   │   ├── 🍎 AppDelegate.swift
+│   │   ├── ⚙️ GeneratedPluginRegistrant.h
+│   │   ├── 📊 GeneratedPluginRegistrant.m
+│   │   ├── 📄 Info.plist
+│   │   └── ⚙️ Runner-Bridging-Header.h
+│   ├── 📁 Runner.xcodeproj/
+│   │   ├── 📁 project.xcworkspace/
+│   │   │   ├── 📁 xcshareddata/
+│   │   │   │   ├── 📄 IDEWorkspaceChecks.plist
+│   │   │   │   └── 📄 WorkspaceSettings.xcsettings
+│   │   │   └── 📄 contents.xcworkspacedata
+│   │   ├── 📁 xcshareddata/
+│   │   │   └── 📁 xcschemes/
+│   │   │       └── 📄 Runner.xcscheme
+│   │   └── 📄 project.pbxproj
+│   ├── 📁 Runner.xcworkspace/
+│   │   ├── 📁 xcshareddata/
+│   │   │   ├── 📄 IDEWorkspaceChecks.plist
+│   │   │   └── 📄 WorkspaceSettings.xcsettings
+│   │   └── 📄 contents.xcworkspacedata
+│   ├── 📁 RunnerTests/
+│   │   └── 🍎 RunnerTests.swift
+│   └── 🚫 .gitignore
+├── 📁 lib/
+│   ├── 📁 config/
+│   │   ├── 📁 routes/
+│   │   │   ├── 🔵 routers.dart
+│   │   │   └── 🔵 routers_generated.dart
+│   │   ├── 📁 style/
+│   │   │   ├── 🔵 app_color.dart
+│   │   │   ├── 🔵 hex_color.dart
+│   │   │   ├── 🔵 icon_broken.dart
+│   │   │   ├── 🔵 theme.dart
+│   │   │   └── 🔵 theme_manager.dart
+│   │   └── 🔵 app_export.dart
+│   ├── 📁 core/
+│   │   ├── 📁 extension/
+│   │   │   ├── 🔵 extension_string.dart
+│   │   │   ├── 🔵 extension_widget.dart
+│   │   │   ├── 🔵 extesion_int.dart
+│   │   │   └── 🔵 navigator_extension.dart
+│   │   ├── 📁 translate/
+│   │   │   ├── 📁 generated/
+│   │   │   │   ├── 🔵 app_localizations.dart
+│   │   │   │   ├── 🔵 app_localizations_ar.dart
+│   │   │   │   └── 🔵 app_localizations_en.dart
+│   │   │   ├── 📄 app_ar.arb
+│   │   │   ├── 📄 app_en.arb
+│   │   │   └── 🔵 l10n.dart
+│   │   ├── 📁 utils/
+│   │   │   ├── 🔵 app_size.dart
+│   │   │   ├── 🔵 app_strings.dart
+│   │   │   ├── 🔵 auth_helper.dart
+│   │   │   ├── 🔵 content.dart
+│   │   │   ├── 🔵 date_formatter.dart
+│   │   │   ├── 🔵 dummy_data.dart
+│   │   │   ├── 🔵 error_handler.dart
+│   │   │   ├── 🔵 font_manager.dart
+│   │   │   ├── 🔵 form_validator.dart
+│   │   │   ├── 🔵 helper.dart
+│   │   │   ├── 🔵 image_manager.dart
+│   │   │   ├── 🔵 responsive_manager.dart
+│   │   │   ├── 🔵 share_manager.dart
+│   │   │   ├── 🔵 ui_helper.dart
+│   │   │   └── 🔵 validate.dart
+│   │   ├── 📁 widgets/
+│   │   │   ├── 🔵 app_wrapper.dart
+│   │   │   ├── 🔵 build_seation_widget.dart
+│   │   │   ├── 🔵 circular_indicator_widget.dart
+│   │   │   ├── 🔵 custom_empty_screen.dart
+│   │   │   ├── 🔵 custome_error_screen.dart
+│   │   │   ├── 🔵 custome_sliver_app_bar.dart
+│   │   │   ├── 🔵 custome_state_widget.dart
+│   │   │   ├── 🔵 cutom_delete_dilaog.dart
+│   │   │   ├── 🔵 default_bottom.dart
+│   │   │   ├── 🔵 divider_widget.dart
+│   │   │   ├── 🔵 flutter_toast.dart
+│   │   │   ├── 🔵 icon_button_widget.dart
+│   │   │   ├── 🔵 loadin_dialog_widget.dart
+│   │   │   ├── 🔵 sheet_line_widget.dart
+│   │   │   ├── 🔵 shimer_widget.dart
+│   │   │   ├── 🔵 textform_widget.dart
+│   │   │   └── 🔵 university_dropdown_widget.dart
+│   │   ├── 🔵 animation_dialog.dart
+│   │   └── 🔵 animation_widget.dart
+│   ├── 📁 features/
+│   │   ├── 📁 auth/
+│   │   │   ├── 📁 controller/
+│   │   │   │   ├── 🔵 auth_cubit.dart
+│   │   │   │   └── 🔵 auth_state.dart
+│   │   │   ├── 📁 models/
+│   │   │   │   └── 🔵 client_model.dart
+│   │   │   └── 📁 view/
+│   │   │       ├── 📁 screens/
+│   │   │       │   ├── 🔵 login_screen.dart
+│   │   │       │   └── 🔵 register_screen.dart
+│   │   │       └── 📁 widget/
+│   │   ├── 📁 colleges/
+│   │   │   ├── 📁 controller/
+│   │   │   │   ├── 🔵 college_cubit.dart
+│   │   │   │   └── 🔵 college_state.dart
+│   │   │   ├── 📁 models/
+│   │   │   │   └── 🔵 college_model.dart
+│   │   │   └── 📁 view/
+│   │   │       ├── 📁 screens/
+│   │   │       │   ├── 🔵 add_edit_college_screen.dart
+│   │   │       │   ├── 🔵 all_colleges_screen.dart
+│   │   │       │   └── 🔵 college_details_screen.dart
+│   │   │       └── 📁 widgets/
+│   │   │           ├── 🔵 college_card.dart
+│   │   │           └── 🔵 delete_sheet_widget.dart
+│   │   ├── 📁 departments/
+│   │   │   ├── 📁 controller/
+│   │   │   │   ├── 🔵 department_cubit.dart
+│   │   │   │   └── 🔵 department_state.dart
+│   │   │   ├── 📁 models/
+│   │   │   │   ├── 🔵 academic_year_model.dart
+│   │   │   │   ├── 🔵 department_model.dart
+│   │   │   │   └── 🔵 term_model.dart
+│   │   │   └── 📁 view/
+│   │   │       ├── 📁 screens/
+│   │   │       │   ├── 🔵 add_edit_department_screen.dart
+│   │   │       │   ├── 🔵 department_details_screen.dart
+│   │   │       │   ├── 🔵 departments_screen.dart
+│   │   │       │   └── 🔵 term_details_screen.dart
+│   │   │       └── 📁 widgets/
+│   │   │           ├── 🔵 add_edit_term_sheet.dart
+│   │   │           ├── 🔵 add_years_sheet.dart
+│   │   │           ├── 🔵 custom_contant_widget.dart
+│   │   │           ├── 🔵 delete_department_dialog.dart
+│   │   │           ├── 🔵 delete_term_dialog.dart
+│   │   │           ├── 🔵 delete_years_widget.dart
+│   │   │           ├── 🔵 department_card_widget.dart
+│   │   │           ├── 🔵 department_years_sction.dart
+│   │   │           └── 🔵 view_department_details.dart
+│   │   ├── 📁 error_screen/
+│   │   │   ├── 📁 controller/
+│   │   │   │   ├── 🔵 error_management_cubit.dart
+│   │   │   │   └── 🔵 error_management_state.dart
+│   │   │   ├── 📁 model/
+│   │   │   └── 📁 view/
+│   │   │       ├── 📁 screens/
+│   │   │       │   └── 🔵 error_screen.dart
+│   │   │       └── 📁 widgets/
+│   │   ├── 📁 home/
+│   │   │   ├── 📁 controller/
+│   │   │   │   ├── 🔵 home_cubit.dart
+│   │   │   │   └── 🔵 home_state.dart
+│   │   │   ├── 📁 models/
+│   │   │   └── 📁 view/
+│   │   │       ├── 📁 screen/
+│   │   │       │   └── 🔵 home_screen.dart
+│   │   │       └── 📁 widget/
+│   │   │           ├── 🔵 build_feature_card_widget.dart
+│   │   │           └── 🔵 welcome_section_widget.dart
+│   │   └── 📁 universities/
+│   │       ├── 📁 controller/
+│   │       │   ├── 🔵 university_cubit.dart
+│   │       │   └── 🔵 university_state.dart
+│   │       ├── 📁 models/
+│   │       │   └── 🔵 university_model.dart
+│   │       └── 📁 view/
+│   │           ├── 📁 screens/
+│   │           │   ├── 🔵 add_edit_university_screen.dart
+│   │           │   └── 🔵 universities_screen.dart
+│   │           └── 📁 widgets/
+│   │               ├── 🔵 delete_university_dialog.dart
+│   │               ├── 🔵 university_card.dart
+│   │               └── 🔵 university_filter_widget.dart
+│   ├── 📁 services/
+│   │   ├── 📁 firebase/
+│   │   │   ├── 🔵 error_management_service.dart
+│   │   │   └── 🔵 firebase_options.dart
+│   │   ├── 📁 network/
+│   │   │   ├── 📁 local/
+│   │   │   │   ├── 🔵 api_cache.dart
+│   │   │   │   ├── 🔵 cache_helper.dart
+│   │   │   │   └── 🔵 local_server.dart
+│   │   │   └── 📁 remote/
+│   │   │       ├── 🔵 api_constant.dart
+│   │   │       ├── 🔵 dio_helper.dart
+│   │   │       ├── 🔵 dio_interceptor.dart
+│   │   │       └── 🔵 logger.dart
+│   │   ├── 🔵 app_abserver.dart
+│   │   └── 🔵 service_locator.dart
+│   ├── 🔵 dream_admin.dart
+│   └── 🔵 main.dart
+├── 📁 linux/
+│   ├── 📁 flutter/
+│   │   ├── 📁 ephemeral/
+│   │   │   └── 📁 .plugin_symlinks/
+│   │   │       ├── 📄 path_provider_linux
+│   │   │       ├── 📄 shared_preferences_linux
+│   │   │       └── 📄 url_launcher_linux
+│   │   ├── 📄 CMakeLists.txt
+│   │   ├── ⚙️ generated_plugin_registrant.cc
+│   │   ├── ⚙️ generated_plugin_registrant.h
+│   │   └── 📄 generated_plugins.cmake
+│   ├── 📁 runner/
+│   │   ├── 📄 CMakeLists.txt
+│   │   ├── ⚙️ main.cc
+│   │   ├── ⚙️ my_application.cc
+│   │   └── ⚙️ my_application.h
+│   ├── 🚫 .gitignore
+│   └── 📄 CMakeLists.txt
+├── 📁 macos/
+│   ├── 📁 Flutter/
+│   │   ├── 📁 ephemeral/
+│   │   │   ├── 📄 Flutter-Generated.xcconfig
+│   │   │   └── 🐚 flutter_export_environment.sh
+│   │   ├── 📄 Flutter-Debug.xcconfig
+│   │   ├── 📄 Flutter-Release.xcconfig
+│   │   └── 🍎 GeneratedPluginRegistrant.swift
+│   ├── 📁 Runner/
+│   │   ├── 📁 Assets.xcassets/
+│   │   │   └── 📁 AppIcon.appiconset/
+│   │   │       ├── 📄 Contents.json
+│   │   │       ├── 🖼️ app_icon_1024.png
+│   │   │       ├── 🖼️ app_icon_128.png
+│   │   │       ├── 🖼️ app_icon_16.png
+│   │   │       ├── 🖼️ app_icon_256.png
+│   │   │       ├── 🖼️ app_icon_32.png
+│   │   │       ├── 🖼️ app_icon_512.png
+│   │   │       └── 🖼️ app_icon_64.png
+│   │   ├── 📁 Base.lproj/
+│   │   │   └── 📄 MainMenu.xib
+│   │   ├── 📁 Configs/
+│   │   │   ├── 📄 AppInfo.xcconfig
+│   │   │   ├── 📄 Debug.xcconfig
+│   │   │   ├── 📄 Release.xcconfig
+│   │   │   └── 📄 Warnings.xcconfig
+│   │   ├── 🍎 AppDelegate.swift
+│   │   ├── 📄 DebugProfile.entitlements
+│   │   ├── 📄 Info.plist
+│   │   ├── 🍎 MainFlutterWindow.swift
+│   │   └── 📄 Release.entitlements
+│   ├── 📁 Runner.xcodeproj/
+│   │   ├── 📁 project.xcworkspace/
+│   │   │   └── 📁 xcshareddata/
+│   │   │       └── 📄 IDEWorkspaceChecks.plist
+│   │   ├── 📁 xcshareddata/
+│   │   │   └── 📁 xcschemes/
+│   │   │       └── 📄 Runner.xcscheme
+│   │   └── 📄 project.pbxproj
+│   ├── 📁 Runner.xcworkspace/
+│   │   ├── 📁 xcshareddata/
+│   │   │   └── 📄 IDEWorkspaceChecks.plist
+│   │   └── 📄 contents.xcworkspacedata
+│   ├── 📁 RunnerTests/
+│   │   └── 🍎 RunnerTests.swift
+│   └── 🚫 .gitignore
+├── 📁 test/
+│   └── 🔵 widget_test.dart
+├── 📁 web/
+│   ├── 📁 icons/
+│   │   ├── 🖼️ Icon-192.png
+│   │   ├── 🖼️ Icon-512.png
+│   │   ├── 🖼️ Icon-maskable-192.png
+│   │   └── 🖼️ Icon-maskable-512.png
+│   ├── 🖼️ favicon.png
+│   ├── 🌐 index.html
+│   └── 📄 manifest.json
+├── 📁 windows/
+│   ├── 📁 flutter/
+│   │   ├── 📁 ephemeral/
+│   │   │   └── 📁 .plugin_symlinks/
+│   │   │       ├── 📄 cloud_firestore
+│   │   │       ├── 📄 firebase_auth
+│   │   │       ├── 📄 firebase_core
+│   │   │       ├── 📄 path_provider_windows
+│   │   │       ├── 📄 shared_preferences_windows
+│   │   │       └── 📄 url_launcher_windows
+│   │   ├── 📄 CMakeLists.txt
+│   │   ├── ⚙️ generated_plugin_registrant.cc
+│   │   ├── ⚙️ generated_plugin_registrant.h
+│   │   └── 📄 generated_plugins.cmake
+│   ├── 📁 runner/
+│   │   ├── 📁 resources/
+│   │   │   └── 🖼️ app_icon.ico
+│   │   ├── 📄 CMakeLists.txt
+│   │   ├── 📄 Runner.rc
+│   │   ├── ⚙️ flutter_window.cpp
+│   │   ├── ⚙️ flutter_window.h
+│   │   ├── ⚙️ main.cpp
+│   │   ├── ⚙️ resource.h
+│   │   ├── 📄 runner.exe.manifest
+│   │   ├── ⚙️ utils.cpp
+│   │   ├── ⚙️ utils.h
+│   │   ├── ⚙️ win32_window.cpp
+│   │   └── ⚙️ win32_window.h
+│   ├── 🚫 .gitignore
+│   └── 📄 CMakeLists.txt
+├── 📄 .flutter-plugins-dependencies 🚫 (auto-hidden)
+├── 🚫 .gitignore
+├── 📄 .metadata
+├── 📖 README.md
+├── ⚙️ analysis_options.yaml
+├── 📄 dreame_admin.iml 🚫 (auto-hidden)
+├── 📄 firebase.json
+├── ⚙️ l10n.yaml
+├── 🔒 pubspec.lock
+└── ⚙️ pubspec.yaml
+```
+
+---
+*Generated by FileTree Pro Extension*
 
 ## 17) إسهامات مستقبلية (Contribution)
 1. افتح Issue لما ستقوم به.
